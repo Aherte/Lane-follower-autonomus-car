@@ -2,7 +2,7 @@
 
 Video 1: https://www.youtube.com/watch?v=8apkTWwDz_E
 
-Video 2: https://studio.youtube.com/video/ui_MtQcV3lU/edit
+Video 2: [https://studio.youtube.com/video/ui_MtQcV3lU/edit](https://www.youtube.com/shorts/ui_MtQcV3lU)
 
 ![kapak resim](https://github.com/Aherte/Lane-follower-autonomus-car/assets/55800601/f15d4950-80d9-43d0-b9ba-2afca9b6e2fd)
 
