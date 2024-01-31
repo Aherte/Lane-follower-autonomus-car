@@ -267,7 +267,7 @@ int main(int argc,char **argv)
     LaneFinder();
     LaneCenter();
     Stop_detection();
-    //Object_detection();
+    Object_detection();
     Light_detection();
 
     cout<<laneEnd<<endl;
@@ -281,15 +281,15 @@ int main(int argc,char **argv)
   dist_Light = 0;
   goto Light;
     }
-  //   if(dist_Object > 10 && dist_Object < 35){
-  // digitalWrite(21, 1);
+    if(dist_Object > 10 && dist_Object < 35){
+   digitalWrite(21, 1);
 	// digitalWrite(22, 0);    //decimal = 9
 	// digitalWrite(23, 0);
 	// digitalWrite(24, 1);
 	// cout<<"Car"<<endl;
-  // dist_Object = 0;
-  // goto Object;
-  //   }
+   dist_Object = 0;
+   goto Object;
+     }
     if(dist_stop > 25 && dist_stop < 35){
   digitalWrite(21, 0);
 	digitalWrite(22, 0);    //decimal = 8
