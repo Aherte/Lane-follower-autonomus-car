@@ -13,8 +13,8 @@ const int D1 = 12;       //Raspberry pin 22
 const int D2 = 2;       //Raspberry pin 23
 const int D3 = 3;       //Raspberry pin 24    MSB
 
-long sure =0;
-long mesafe = 0;
+long time =0;
+long distance = 0;
 
 int a,b,c,d,data;
 const int max = 120;
@@ -243,11 +243,12 @@ void loop()
   digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
-  sure = pulseIn(echoPin, HIGH);
-
-  mesafe = (sure / 2) * 0.0348;
+   
+  time = pulseIn(echoPin, HIGH);
+  distance = (time / 2) * 0.0348;
 
   Data();
+   
   if(data==0)
    {
      Forward();
@@ -296,9 +297,8 @@ void loop()
   else if (data == 10){
     Stop();
   }
-  if (mesafe <= 15) {
-
-    Car();
+  else if (distance <= 15 && data != 9) {
+    Stop();
   }
 
 }
